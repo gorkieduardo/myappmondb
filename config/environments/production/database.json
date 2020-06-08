@@ -4,11 +4,7 @@
     "default": {
       "connector": "mongoose",
       "settings": {
-        "host": "${process.env.DATABASE_HOST || '127.0.0.1'}",
-        "port": "${process.env.DATABASE_PORT || 27017}",
-        "database": "${process.env.DATABASE_NAME || 'strapi'}",
-        "username": "${process.env.DATABASE_USERNAME || ''}",
-        "password": "${process.env.DATABASE_PASSWORD || ''}"
+        "uri": "mongodb://eduardoadmin:eduardo235711@myappdb-shard-00-00-rigdn.mongodb.net:27017,myappdb-shard-00-01-rigdn.mongodb.net:27017,myappdb-shard-00-02-rigdn.mongodb.net:27017/<dbname>?ssl=true&replicaSet=myappdb-shard-0&authSource=admin&retryWrites=true&w=majority"
       },
       "options": {}
     }
